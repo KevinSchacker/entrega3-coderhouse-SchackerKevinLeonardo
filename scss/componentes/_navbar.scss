@@ -1,0 +1,25 @@
+.navbar {
+    background-color: transparent !important;
+    @include transition;
+
+    .navbar-brand {
+        img {
+            max-width: 350px !important;
+            margin-right: 10px !important;
+        }
+    }
+
+    .nav-link {
+        font-size: 24px;
+        color: $secondary-color;
+        @include transition;
+
+        &.active {
+            color: #fff;
+        }
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+body {
+    font-family: $font-family-modern;
+    background-image: url('../img/fondo/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-position: center;
+
+    @media (max-width: 576px) {
+        padding-top: 56px;
+    }
+}

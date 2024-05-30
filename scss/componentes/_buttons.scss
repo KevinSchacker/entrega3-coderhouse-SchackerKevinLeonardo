@@ -1,0 +1,21 @@
+.btn {
+    margin-top: auto;
+    color: $background-color;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+
+    &:hover {
+        background-color: lighten($primary-color,10%);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.btn-primary:hover {
+    background-color: #34fd02;
+    border-color: #000;
+    color: #000;
+    font-weight: bold;
+}

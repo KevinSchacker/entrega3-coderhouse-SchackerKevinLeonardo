@@ -1,0 +1,38 @@
+#productos {
+    text-align: center;
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 4rem;
+    }
+
+    .productos-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 4rem;
+
+        a {
+            flex: 0 0 30%;
+            margin: 0 1%;
+            padding: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px $primary-color; /* ampliar y fondo color marca */
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border: none; 
+            }
+        }
+    }
+}

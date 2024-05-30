@@ -1,0 +1,19 @@
+// Mixins reutilizables
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin box-shadow {
+    box-shadow: $box-shadow;
+}
+
+@mixin transition {
+    transition: $transition;
+}

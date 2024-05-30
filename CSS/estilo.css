@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../img/fondo/fondo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-position: center;
+}
+@media (max-width: 576px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.navbar {
+  background-color: transparent !important;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-brand img {
+  max-width: 350px !important;
+  margin-right: 10px !important;
+}
+.navbar .nav-link {
+  font-size: 24px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link.active {
+  color: #fff;
+}
+.navbar .nav-link:hover {
+  color: rgb(134, 29, 34);
+}
+
+#productos {
+  text-align: center;
+}
+#productos h1 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(134, 29, 34);
+  margin-bottom: 4rem;
+}
+#productos .productos-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 4rem;
+}
+#productos .productos-slider a {
+  flex: 0 0 30%;
+  margin: 0 1%;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#productos .productos-slider a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgb(134, 29, 34); /* ampliar y fondo color marca */
+}
+#productos .productos-slider a img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  font-family: monospace;
+  font-weight: bold;
+  color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#redes-sociales {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#redes-sociales h2 {
+  font-weight: bold;
+  color: rgb(134, 29, 34);
+  margin-top: 60px;
+}
+#redes-sociales img {
+  max-width: 40px;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+#redes-sociales img:hover {
+  transform: scale(1.4);
+}
+
+.btn {
+  margin-top: auto;
+  color: #ffffff;
+  background-color: rgb(134, 29, 34);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.btn:hover {
+  background-color: #b0262d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #34fd02;
+  border-color: #000;
+  color: #000;
+  font-weight: bold;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.nosotros, .seguridad {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(134, 29, 34);
+}
+.nosotros p, .seguridad p {
+  color: black;
+  font-size: large;
+  font-weight: lighter;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: justify;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* O la altura que desees */
+}
+
+.map-container {
+  width: 70%; /* Ajusta el tamaño según sea necesario */
+  margin: 0 auto;
+}
+
+iframe {
+  width: 100%; /* Asegúrate de que el iframe ocupe todo el ancho del contenedor */
+  height: auto; /* Ajusta la altura según sea necesario */
+}
+
+/*# sourceMappingURL=estilo.css.map */

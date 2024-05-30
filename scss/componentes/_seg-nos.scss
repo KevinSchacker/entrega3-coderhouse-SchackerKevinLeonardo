@@ -1,0 +1,33 @@
+.nosotros , .seguridad {
+    text-align: center;
+    font-weight: bold;
+    color: $primary-color;
+
+    p{
+        color:black;
+        font-size: large;
+        font-weight:lighter;
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-align: justify;
+    }          
+}
+
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* O la altura que desees */
+  }
+  
+  .map-container {
+    width: 70%; /* Ajusta el tamaño según sea necesario */
+    margin: 0 auto;
+  }
+  
+  iframe {
+    width: 100%; /* Asegúrate de que el iframe ocupe todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura según sea necesario */
+  }

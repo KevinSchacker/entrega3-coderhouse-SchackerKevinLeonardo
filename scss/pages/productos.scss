@@ -1,0 +1,113 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border: none; // Eliminar cualquier borde
+    box-shadow: none; // Eliminar cualquier sombra
+    display: flex;
+    flex-direction: column; // elementos internos se apilen verticalmente
+    align-items: center; // Centrar horizontalmente
+    justify-content: center; // Centrar verticalmente
+    height: 350px; // Altura fija para todas las cards
+  
+    .card-body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); // Fondo oscuro semi-transparente
+      color: #fff; // Texto blanco
+      display: flex;
+      flex-direction: column;
+      justify-content: center; // Centrar verticalmente el contenido
+      align-items: center; // Centrar horizontalmente el contenido
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  
+    &:hover .card-body {
+      opacity: 1; // Ajustar opacidad a 1 (100%)
+    }
+  
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      max-height: 100%; // imagen altura del card
+      display: block;
+      border: none; 
+      object-fit: cover; // Ajustar la imagen para cubrir el área del contenedor
+    }
+  
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    .card-text {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    .payment-methods {
+      margin-top: auto;
+      h6 {
+        margin-bottom: 8px;
+        font-size: 1rem;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          font-size: 14px; 
+        }
+      }
+    }
+  
+    .btn {
+      margin-top: 10px;
+      background-color: $primary-color;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition: background-color 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  .payment-methods {
+    background-color: transparent;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    .container {
+      h6 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #333;
+      }
+      .payment-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .payment-icon {
+          width: 50px;
+          height: auto;
+          transition: transform 0.3s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }

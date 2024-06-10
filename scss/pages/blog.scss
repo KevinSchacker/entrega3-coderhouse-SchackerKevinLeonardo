@@ -1,0 +1,80 @@
+.seguridad-page {
+    padding: 60px;
+  
+    section {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px $primary-color;
+  
+      h2 {
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        border-bottom: 3px solid $primary-color;
+        padding-bottom: 5px;
+      }
+  
+      p {
+        font-size: 16px;
+        color: #1f1f1f;
+        line-height: 1.5;
+      }
+  
+      &.services, &.testimonials, &.faqs, &.promotions, &.contact, &.blog {
+        transition: transform 0.3s, background-color 0.3s;
+        background-color: #ffffff;
+  
+        &:hover {
+          transform: scale(1.04);
+          
+        }
+      }
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+  
+      input, textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+  
+      button {
+        padding: 10px 20px;
+        background-color: $primary-color;
+        font-size: 24px;
+   
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
+  
+    .service-item, .testimonial-item, .faq-item, .promotion-item, .blog-post {
+      margin-bottom: 20px;
+  
+      h3 {
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 5px;
+      }
+  
+      p {
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+  }
+  

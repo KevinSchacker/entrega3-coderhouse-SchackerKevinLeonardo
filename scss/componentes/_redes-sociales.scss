@@ -5,13 +5,13 @@
     h2 {
         font-weight: bold;
         color: $primary-color;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     img {
         max-width: 40px;
         height: auto;
-        margin: 0 10px;
+        margin: 0 10px 30px;
         transition: transform 0.3s ease;
 
         &:hover {
